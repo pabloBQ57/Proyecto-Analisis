@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2DC1BD9-0C00-4935-B5E8-879A06F0A5A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentación</RootNamespace>
+    <AssemblyName>Presentación</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administración\CrearUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administración\CrearUsuario.Designer.cs">
+      <DependentUpon>CrearUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administración\Donaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administración\Donaciones.Designer.cs">
+      <DependentUpon>Donaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administración\EliminarEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administración\EliminarEmpleados.Designer.cs">
+      <DependentUpon>EliminarEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administración\Gastos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administración\Gastos.Designer.cs">
+      <DependentUpon>Gastos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administración\IngresarEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administración\IngresarEmpleados.Designer.cs">
+      <DependentUpon>IngresarEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administración\MainMenuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administración\MainMenuAdmin.Designer.cs">
+      <DependentUpon>MainMenuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caja\MainMenuCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja\MainMenuCaja.Designer.cs">
+      <DependentUpon>MainMenuCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caja\Mensualidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja\Mensualidad.Designer.cs">
+      <DependentUpon>Mensualidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caja\VerFicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja\VerFicha.Designer.cs">
+      <DependentUpon>VerFicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enfermeria\MainMenuEnfermero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enfermeria\MainMenuEnfermero.Designer.cs">
+      <DependentUpon>MainMenuEnfermero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enfermeria\VerFichaMedica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enfermeria\VerFichaMedica.Designer.cs">
+      <DependentUpon>VerFichaMedica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Especialistas\MainMenuEspecialista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Especialistas\MainMenuEspecialista.Designer.cs">
+      <DependentUpon>MainMenuEspecialista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Especialistas\VerFicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Especialistas\VerFicha.Designer.cs">
+      <DependentUpon>VerFicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Farmacia\MainMenuFarmacia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Farmacia\MainMenuFarmacia.Designer.cs">
+      <DependentUpon>MainMenuFarmacia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Farmacia\VerFicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Farmacia\VerFicha.Designer.cs">
+      <DependentUpon>VerFicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laboratorio\MainMenuLaboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laboratorio\MainMenuLaboratorio.Designer.cs">
+      <DependentUpon>MainMenuLaboratorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Laboratorio\VerFicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laboratorio\VerFicha.Designer.cs">
+      <DependentUpon>VerFicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicoGeneral\AsignarEnfermero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicoGeneral\AsignarEnfermero.Designer.cs">
+      <DependentUpon>AsignarEnfermero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicoGeneral\AsignarEspecialista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicoGeneral\AsignarEspecialista.Designer.cs">
+      <DependentUpon>AsignarEspecialista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicoGeneral\CrearPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicoGeneral\CrearPaciente.Designer.cs">
+      <DependentUpon>CrearPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicoGeneral\GenerarFicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicoGeneral\GenerarFicha.Designer.cs">
+      <DependentUpon>GenerarFicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicoGeneral\MainMenuDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicoGeneral\MainMenuDoctor.Designer.cs">
+      <DependentUpon>MainMenuDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicoGeneral\VerFicha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicoGeneral\VerFicha.Designer.cs">
+      <DependentUpon>VerFicha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administración\CrearUsuario.resx">
+      <DependentUpon>CrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administración\Donaciones.resx">
+      <DependentUpon>Donaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administración\EliminarEmpleados.resx">
+      <DependentUpon>EliminarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administración\Gastos.resx">
+      <DependentUpon>Gastos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administración\IngresarEmpleados.resx">
+      <DependentUpon>IngresarEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administración\MainMenuAdmin.resx">
+      <DependentUpon>MainMenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja\MainMenuCaja.resx">
+      <DependentUpon>MainMenuCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja\Mensualidad.resx">
+      <DependentUpon>Mensualidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja\VerFicha.resx">
+      <DependentUpon>VerFicha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enfermeria\MainMenuEnfermero.resx">
+      <DependentUpon>MainMenuEnfermero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enfermeria\VerFichaMedica.resx">
+      <DependentUpon>VerFichaMedica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Especialistas\MainMenuEspecialista.resx">
+      <DependentUpon>MainMenuEspecialista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Especialistas\VerFicha.resx">
+      <DependentUpon>VerFicha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Farmacia\MainMenuFarmacia.resx">
+      <DependentUpon>MainMenuFarmacia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Farmacia\VerFicha.resx">
+      <DependentUpon>VerFicha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laboratorio\MainMenuLaboratorio.resx">
+      <DependentUpon>MainMenuLaboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laboratorio\VerFicha.resx">
+      <DependentUpon>VerFicha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicoGeneral\AsignarEnfermero.resx">
+      <DependentUpon>AsignarEnfermero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicoGeneral\AsignarEspecialista.resx">
+      <DependentUpon>AsignarEspecialista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicoGeneral\CrearPaciente.resx">
+      <DependentUpon>CrearPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicoGeneral\GenerarFicha.resx">
+      <DependentUpon>GenerarFicha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicoGeneral\MainMenuDoctor.resx">
+      <DependentUpon>MainMenuDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicoGeneral\VerFicha.resx">
+      <DependentUpon>VerFicha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Comun\Comun.csproj">
+      <Project>{f5979df7-a35c-48ef-81b8-56435b76b02d}</Project>
+      <Name>Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{0d4ba99b-f46c-45c6-85a8-704bae18eac0}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
