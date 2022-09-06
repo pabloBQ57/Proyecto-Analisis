@@ -1,0 +1,6 @@
+C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Comun\bin\Debug\Comun.dll
+C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Comun\bin\Debug\Comun.pdb
+C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Comun\obj\Debug\Comun.csprojAssemblyReference.cache
+C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Comun\obj\Debug\Comun.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Comun\obj\Debug\Comun.dll
+C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Comun\obj\Debug\Comun.pdb
