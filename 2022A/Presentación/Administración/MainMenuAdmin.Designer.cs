@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuAdmin));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btninventario = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnGastos = new System.Windows.Forms.Button();
             this.btnDonaciones = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.panelformularios = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btncrearusuario = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -53,7 +53,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(105)))), ((int)(((byte)(191)))));
-            this.panelMenu.Controls.Add(this.btncrearusuario);
+            this.panelMenu.Controls.Add(this.btninventario);
             this.panelMenu.Controls.Add(this.btnCerrar);
             this.panelMenu.Controls.Add(this.btnGastos);
             this.panelMenu.Controls.Add(this.btnDonaciones);
@@ -65,6 +65,18 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 548);
             this.panelMenu.TabIndex = 0;
+            // 
+            // btninventario
+            // 
+            this.btninventario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(64)))));
+            this.btninventario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btninventario.Location = new System.Drawing.Point(0, 283);
+            this.btninventario.Name = "btninventario";
+            this.btninventario.Size = new System.Drawing.Size(220, 40);
+            this.btninventario.TabIndex = 8;
+            this.btninventario.Text = "Inventario";
+            this.btninventario.UseVisualStyleBackColor = false;
+            this.btninventario.Click += new System.EventHandler(this.btninventario_Click);
             // 
             // btnCerrar
             // 
@@ -82,9 +94,9 @@
             // 
             this.btnGastos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(64)))));
             this.btnGastos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGastos.Location = new System.Drawing.Point(0, 275);
+            this.btnGastos.Location = new System.Drawing.Point(0, 247);
             this.btnGastos.Name = "btnGastos";
-            this.btnGastos.Size = new System.Drawing.Size(220, 50);
+            this.btnGastos.Size = new System.Drawing.Size(220, 40);
             this.btnGastos.TabIndex = 5;
             this.btnGastos.Text = "Gastos";
             this.btnGastos.UseVisualStyleBackColor = false;
@@ -94,9 +106,9 @@
             // 
             this.btnDonaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(64)))));
             this.btnDonaciones.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDonaciones.Location = new System.Drawing.Point(0, 228);
+            this.btnDonaciones.Location = new System.Drawing.Point(0, 210);
             this.btnDonaciones.Name = "btnDonaciones";
-            this.btnDonaciones.Size = new System.Drawing.Size(220, 50);
+            this.btnDonaciones.Size = new System.Drawing.Size(220, 40);
             this.btnDonaciones.TabIndex = 4;
             this.btnDonaciones.Text = "Donaciones";
             this.btnDonaciones.UseVisualStyleBackColor = false;
@@ -106,9 +118,9 @@
             // 
             this.btnEliminarEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(64)))));
             this.btnEliminarEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEliminarEmpleado.Location = new System.Drawing.Point(0, 181);
+            this.btnEliminarEmpleado.Location = new System.Drawing.Point(0, 173);
             this.btnEliminarEmpleado.Name = "btnEliminarEmpleado";
-            this.btnEliminarEmpleado.Size = new System.Drawing.Size(220, 50);
+            this.btnEliminarEmpleado.Size = new System.Drawing.Size(220, 40);
             this.btnEliminarEmpleado.TabIndex = 2;
             this.btnEliminarEmpleado.Text = "Eliminar Empleado";
             this.btnEliminarEmpleado.UseVisualStyleBackColor = false;
@@ -120,7 +132,7 @@
             this.btnIngresarEmpleados.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnIngresarEmpleados.Location = new System.Drawing.Point(0, 136);
             this.btnIngresarEmpleados.Name = "btnIngresarEmpleados";
-            this.btnIngresarEmpleados.Size = new System.Drawing.Size(220, 50);
+            this.btnIngresarEmpleados.Size = new System.Drawing.Size(220, 40);
             this.btnIngresarEmpleados.TabIndex = 1;
             this.btnIngresarEmpleados.Text = "Ingresar Empleados";
             this.btnIngresarEmpleados.UseVisualStyleBackColor = false;
@@ -202,18 +214,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // btncrearusuario
-            // 
-            this.btncrearusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(64)))));
-            this.btncrearusuario.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btncrearusuario.Location = new System.Drawing.Point(0, 322);
-            this.btncrearusuario.Name = "btncrearusuario";
-            this.btncrearusuario.Size = new System.Drawing.Size(220, 50);
-            this.btncrearusuario.TabIndex = 7;
-            this.btncrearusuario.Text = "Crear Usuario";
-            this.btncrearusuario.UseVisualStyleBackColor = false;
-            this.btncrearusuario.Click += new System.EventHandler(this.btncrearusuario_Click);
-            // 
             // MainMenuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -259,6 +259,6 @@
         private System.Windows.Forms.Label lblemail;
         private System.Windows.Forms.Label lblrol;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btncrearusuario;
+        private System.Windows.Forms.Button btninventario;
     }
 }

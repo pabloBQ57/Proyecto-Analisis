@@ -95,9 +95,10 @@ namespace Presentación.Administración
 
         }
 
-        private void btncrearusuario_Click(object sender, EventArgs e)
+
+        private void btninventario_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<CrearUsuario>();
+            AbrirFormulario<Inventario>();
         }
     }
 

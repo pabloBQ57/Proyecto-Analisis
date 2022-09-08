@@ -30,7 +30,7 @@ namespace AccesoDatos
                         {
                             UserloginCache.id = reader.GetInt32(0);
                             UserloginCache.username = reader.GetString(1);
-                            UserloginCache.rol = reader.GetString(4);
+                            UserloginCache.rol = reader.GetString(3);
                         }
                         return true;
                     }

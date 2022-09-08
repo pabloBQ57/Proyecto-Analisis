@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuDoctor));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btncrearpaciente = new System.Windows.Forms.Button();
             this.btncerrar = new System.Windows.Forms.Button();
             this.btnasignarespecialista = new System.Windows.Forms.Button();
             this.btnasignarenfermero = new System.Windows.Forms.Button();
-            this.btngenerarficha = new System.Windows.Forms.Button();
             this.btnverficha = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.lblemail = new System.Windows.Forms.Label();
@@ -43,7 +43,6 @@
             this.panelformularios = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btncrearpaciente = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -58,7 +57,6 @@
             this.panelMenu.Controls.Add(this.btncerrar);
             this.panelMenu.Controls.Add(this.btnasignarespecialista);
             this.panelMenu.Controls.Add(this.btnasignarenfermero);
-            this.panelMenu.Controls.Add(this.btngenerarficha);
             this.panelMenu.Controls.Add(this.btnverficha);
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Controls.Add(this.panel2);
@@ -67,6 +65,20 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 548);
             this.panelMenu.TabIndex = 0;
+            // 
+            // btncrearpaciente
+            // 
+            this.btncrearpaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(64)))));
+            this.btncrearpaciente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btncrearpaciente.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncrearpaciente.ForeColor = System.Drawing.Color.White;
+            this.btncrearpaciente.Location = new System.Drawing.Point(0, 274);
+            this.btncrearpaciente.Name = "btncrearpaciente";
+            this.btncrearpaciente.Size = new System.Drawing.Size(220, 50);
+            this.btncrearpaciente.TabIndex = 5;
+            this.btncrearpaciente.Text = "Crear Paciente";
+            this.btncrearpaciente.UseVisualStyleBackColor = false;
+            this.btncrearpaciente.Click += new System.EventHandler(this.btncrearpaciente_Click);
             // 
             // btncerrar
             // 
@@ -88,7 +100,7 @@
             this.btnasignarespecialista.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnasignarespecialista.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnasignarespecialista.ForeColor = System.Drawing.Color.White;
-            this.btnasignarespecialista.Location = new System.Drawing.Point(0, 273);
+            this.btnasignarespecialista.Location = new System.Drawing.Point(0, 230);
             this.btnasignarespecialista.Name = "btnasignarespecialista";
             this.btnasignarespecialista.Size = new System.Drawing.Size(220, 50);
             this.btnasignarespecialista.TabIndex = 4;
@@ -102,27 +114,13 @@
             this.btnasignarenfermero.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnasignarenfermero.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnasignarenfermero.ForeColor = System.Drawing.Color.White;
-            this.btnasignarenfermero.Location = new System.Drawing.Point(0, 227);
+            this.btnasignarenfermero.Location = new System.Drawing.Point(0, 183);
             this.btnasignarenfermero.Name = "btnasignarenfermero";
             this.btnasignarenfermero.Size = new System.Drawing.Size(220, 50);
             this.btnasignarenfermero.TabIndex = 4;
             this.btnasignarenfermero.Text = "Asignar Enfermero";
             this.btnasignarenfermero.UseVisualStyleBackColor = false;
             this.btnasignarenfermero.Click += new System.EventHandler(this.btnasignarenfermero_Click);
-            // 
-            // btngenerarficha
-            // 
-            this.btngenerarficha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(64)))));
-            this.btngenerarficha.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btngenerarficha.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btngenerarficha.ForeColor = System.Drawing.Color.White;
-            this.btngenerarficha.Location = new System.Drawing.Point(0, 181);
-            this.btngenerarficha.Name = "btngenerarficha";
-            this.btngenerarficha.Size = new System.Drawing.Size(220, 50);
-            this.btngenerarficha.TabIndex = 4;
-            this.btngenerarficha.Text = "Generar Ficha Medica";
-            this.btngenerarficha.UseVisualStyleBackColor = false;
-            this.btngenerarficha.Click += new System.EventHandler(this.btngenerarficha_Click);
             // 
             // btnverficha
             // 
@@ -221,20 +219,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // btncrearpaciente
-            // 
-            this.btncrearpaciente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(64)))));
-            this.btncrearpaciente.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btncrearpaciente.Font = new System.Drawing.Font("Consolas", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncrearpaciente.ForeColor = System.Drawing.Color.White;
-            this.btncrearpaciente.Location = new System.Drawing.Point(0, 320);
-            this.btncrearpaciente.Name = "btncrearpaciente";
-            this.btncrearpaciente.Size = new System.Drawing.Size(220, 50);
-            this.btncrearpaciente.TabIndex = 5;
-            this.btncrearpaciente.Text = "Crear Paciente";
-            this.btncrearpaciente.UseVisualStyleBackColor = false;
-            this.btncrearpaciente.Click += new System.EventHandler(this.btncrearpaciente_Click);
-            // 
             // MainMenuDoctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -267,7 +251,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btngenerarficha;
         private System.Windows.Forms.Button btnverficha;
         private System.Windows.Forms.Button btncerrar;
         private System.Windows.Forms.Button btnasignarespecialista;

@@ -48,11 +48,6 @@ namespace Presentación.MedicoGeneral
 
 
 
-        private void btngenerarficha_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<GenerarFicha>();
-        }
-
         private void lblemail_Click(object sender, EventArgs e)
         {
 

@@ -22,7 +22,6 @@ C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\bin\Debu
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\bin\Debug\Comun.pdb
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.MedicoGeneral.AsignarEnfermero.resources
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.MedicoGeneral.AsignarEspecialista.resources
-C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.MedicoGeneral.GenerarFicha.resources
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.MedicoGeneral.MainMenuDoctor.resources
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.MedicoGeneral.VerFicha.resources
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.Enfermeria.MainMenuEnfermero.resources
@@ -37,4 +36,4 @@ C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debu
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.Farmacia.VerFicha.resources
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.Laboratorio.MainMenuLaboratorio.resources
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.Laboratorio.VerFicha.resources
-C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.Administración.CrearUsuario.resources
+C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.Administración.Inventario.resources
