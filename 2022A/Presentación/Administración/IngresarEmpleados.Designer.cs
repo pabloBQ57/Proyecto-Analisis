@@ -35,7 +35,6 @@
             this.txtdpi = new System.Windows.Forms.TextBox();
             this.txtuser = new System.Windows.Forms.TextBox();
             this.txtpass = new System.Windows.Forms.TextBox();
-            this.txtrol = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@
             this.btningresarempleados = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnactualizar = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,13 +101,6 @@
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(224, 22);
             this.txtpass.TabIndex = 6;
-            // 
-            // txtrol
-            // 
-            this.txtrol.Location = new System.Drawing.Point(151, 355);
-            this.txtrol.Name = "txtrol";
-            this.txtrol.Size = new System.Drawing.Size(224, 22);
-            this.txtrol.TabIndex = 7;
             // 
             // label1
             // 
@@ -189,7 +182,7 @@
             // btningresarempleados
             // 
             this.btningresarempleados.BackColor = System.Drawing.Color.White;
-            this.btningresarempleados.Location = new System.Drawing.Point(48, 410);
+            this.btningresarempleados.Location = new System.Drawing.Point(27, 419);
             this.btningresarempleados.Name = "btningresarempleados";
             this.btningresarempleados.Size = new System.Drawing.Size(107, 31);
             this.btningresarempleados.TabIndex = 15;
@@ -209,13 +202,30 @@
             // 
             // btnactualizar
             // 
-            this.btnactualizar.Location = new System.Drawing.Point(280, 410);
+            this.btnactualizar.Location = new System.Drawing.Point(389, 419);
             this.btnactualizar.Name = "btnactualizar";
             this.btnactualizar.Size = new System.Drawing.Size(95, 31);
             this.btnactualizar.TabIndex = 17;
             this.btnactualizar.Text = "Actualizar";
             this.btnactualizar.UseVisualStyleBackColor = true;
             this.btnactualizar.Click += new System.EventHandler(this.btnactualizar_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Administrador",
+            "Medico",
+            "Enfermero",
+            "Especialista",
+            "Laboratorista",
+            "Farmaceutico",
+            "Cajero"});
+            this.comboBox1.Location = new System.Drawing.Point(151, 356);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(224, 24);
+            this.comboBox1.TabIndex = 18;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // IngresarEmpleados
             // 
@@ -224,6 +234,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(974, 526);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnactualizar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btningresarempleados);
@@ -234,7 +245,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtrol);
             this.Controls.Add(this.txtpass);
             this.Controls.Add(this.txtuser);
             this.Controls.Add(this.txtdpi);
@@ -261,7 +271,6 @@
         private System.Windows.Forms.TextBox txtdpi;
         private System.Windows.Forms.TextBox txtuser;
         private System.Windows.Forms.TextBox txtpass;
-        private System.Windows.Forms.TextBox txtrol;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -272,5 +281,6 @@
         private System.Windows.Forms.Button btningresarempleados;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnactualizar;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

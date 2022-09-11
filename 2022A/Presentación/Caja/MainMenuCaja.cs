@@ -61,5 +61,10 @@ namespace Presentación.Caja
         {
             this.Close();
         }
+
+        private void btnmensualidad_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<Mensualidad>();
+        }
     }
 }

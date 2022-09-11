@@ -25,6 +25,7 @@ namespace Presentación.Administración
             MostrarInvent();
             alternar(dataGridView1);
             
+            
         }
 
         private void MostrarInvent()

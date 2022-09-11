@@ -10,10 +10,13 @@ using System.Windows.Forms;
 using Comun.Cache;
 
 
+
 namespace Presentación.MedicoGeneral
 {
     public partial class MainMenuDoctor : Form
+
     {
+        
         public MainMenuDoctor()
         {
             InitializeComponent();
@@ -67,18 +70,13 @@ namespace Presentación.MedicoGeneral
 
         private void btnverficha_Click(object sender, EventArgs e)
         {
+
             AbrirFormulario<VerFicha>();
+            
         }
 
-        private void btnasignarenfermero_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<AsignarEnfermero>();
-        }
+       
 
-        private void btnasignarespecialista_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<AsignarEspecialista>();
-        }
 
         private void btncerrar_Click(object sender, EventArgs e)
         {

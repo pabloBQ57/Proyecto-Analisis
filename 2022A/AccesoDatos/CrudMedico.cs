@@ -10,6 +10,8 @@ namespace AccesoDatos
 {
     public class CrudMedico:Conexion
     {
+        DataTable tabla = new DataTable();
+
         public void IngresarPaciente(string nombre, string apellido, string direccion, string dpi, string motivo_visita, string examen_laboratorio, string resultados, string diagnostico, string medicina, int cantidad, string tiempo_aplicacion, int total, string observaciones, string correo_encargado)
         {
             using(var connection = GetConnection())
@@ -41,6 +43,24 @@ namespace AccesoDatos
             }
         }
 
+
+        public DataTable MostrarFicha()
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                using (var Command = new SqlCommand())
+                {
+                    Command.Connection = connection;
+                    Command.CommandText = "select * from fichamedica";
+                    Command.CommandType = CommandType.Text;
+                    SqlDataReader reader = Command.ExecuteReader();
+                    tabla.Load(reader);
+
+                    return tabla;
+                }
+            }
+        }
 
 
     }

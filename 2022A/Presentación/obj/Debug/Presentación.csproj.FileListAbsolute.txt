@@ -20,8 +20,6 @@ C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debu
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.Administración.IngresarEmpleados.resources
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\bin\Debug\Comun.dll
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\bin\Debug\Comun.pdb
-C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.MedicoGeneral.AsignarEnfermero.resources
-C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.MedicoGeneral.AsignarEspecialista.resources
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.MedicoGeneral.MainMenuDoctor.resources
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.MedicoGeneral.VerFicha.resources
 C:\Users\pablo\Documents\ANALISIS_DE_SISTEMAS\2022A\2022A\Presentación\obj\Debug\Presentación.Enfermeria.MainMenuEnfermero.resources

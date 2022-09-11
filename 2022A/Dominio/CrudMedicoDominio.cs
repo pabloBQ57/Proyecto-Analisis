@@ -17,6 +17,16 @@ namespace Dominio
         {
             crudMedico.IngresarPaciente(nombre, apellido, direccion, dpi, motivo_visita, examen_laboratorio, resultados, diagnostico, medicina, Convert.ToInt32(cantidad), tiempo_aplicacion, Convert.ToInt32(total), observaciones, correo_encargado);
         }
+
+
+
+        public DataTable MostrarFicha()
+        {
+            DataTable tabla = new DataTable();
+            tabla = crudMedico.MostrarFicha();
+            return tabla;
+
+        }
     }
 
 }

@@ -48,7 +48,7 @@ namespace Presentación.Administración
             txtdpi.Clear();
             txtuser.Clear();
             txtpass.Clear();
-            txtrol.Clear();
+           // txtrol.Clear();
         }
 
         private void btningresarempleados_Click(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace Presentación.Administración
 
             try
             {
-                crudAdminDominio.IngresoEmpleado(txtnombre.Text, txtapellido.Text, txtdireccion.Text, txtdpi.Text, txtuser.Text, txtpass.Text, txtrol.Text);
+                crudAdminDominio.IngresoEmpleado(txtnombre.Text, txtapellido.Text, txtdireccion.Text, txtdpi.Text, txtuser.Text, txtpass.Text, comboBox1.Text);
                 MessageBox.Show("Se ingreso correctamente");
                 limpiar();
             }
@@ -69,6 +69,11 @@ namespace Presentación.Administración
         private void btnactualizar_Click(object sender, EventArgs e)
         {
             MostrarmisUsuarios();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

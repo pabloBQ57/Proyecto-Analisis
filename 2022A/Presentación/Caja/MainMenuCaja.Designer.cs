@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuCaja));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnmensualidad = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnverficha = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
@@ -49,6 +50,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(105)))), ((int)(((byte)(191)))));
+            this.panelMenu.Controls.Add(this.btnmensualidad);
             this.panelMenu.Controls.Add(this.btnCerrar);
             this.panelMenu.Controls.Add(this.btnverficha);
             this.panelMenu.Controls.Add(this.panelLogo);
@@ -57,6 +59,19 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 548);
             this.panelMenu.TabIndex = 2;
+            // 
+            // btnmensualidad
+            // 
+            this.btnmensualidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(64)))));
+            this.btnmensualidad.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnmensualidad.ForeColor = System.Drawing.Color.White;
+            this.btnmensualidad.Location = new System.Drawing.Point(0, 180);
+            this.btnmensualidad.Name = "btnmensualidad";
+            this.btnmensualidad.Size = new System.Drawing.Size(220, 50);
+            this.btnmensualidad.TabIndex = 2;
+            this.btnmensualidad.Text = "Mensualidad";
+            this.btnmensualidad.UseVisualStyleBackColor = false;
+            this.btnmensualidad.Click += new System.EventHandler(this.btnmensualidad_Click);
             // 
             // btnCerrar
             // 
@@ -142,6 +157,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Freestyle Script", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(317, 409);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(352, 58);
@@ -195,5 +211,6 @@
         private System.Windows.Forms.Panel panelformularios;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnmensualidad;
     }
 }

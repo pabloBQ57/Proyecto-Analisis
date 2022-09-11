@@ -154,18 +154,6 @@
     <Compile Include="Laboratorio\VerFicha.Designer.cs">
       <DependentUpon>VerFicha.cs</DependentUpon>
     </Compile>
-    <Compile Include="MedicoGeneral\AsignarEnfermero.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MedicoGeneral\AsignarEnfermero.Designer.cs">
-      <DependentUpon>AsignarEnfermero.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MedicoGeneral\AsignarEspecialista.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MedicoGeneral\AsignarEspecialista.Designer.cs">
-      <DependentUpon>AsignarEspecialista.cs</DependentUpon>
-    </Compile>
     <Compile Include="MedicoGeneral\CrearPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,12 +227,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Laboratorio\VerFicha.resx">
       <DependentUpon>VerFicha.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MedicoGeneral\AsignarEnfermero.resx">
-      <DependentUpon>AsignarEnfermero.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MedicoGeneral\AsignarEspecialista.resx">
-      <DependentUpon>AsignarEspecialista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MedicoGeneral\CrearPaciente.resx">
       <DependentUpon>CrearPaciente.cs</DependentUpon>
